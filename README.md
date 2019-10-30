@@ -1,6 +1,6 @@
 # node-sass-chokidar
 
-[![Build Status](https://travis-ci.org/michaelwayman/node-sass-chokidar.svg?branch=master)](https://travis-ci.org/michaelwayman/node-sass-chokidar)
+[![Build Status](https://travis-ci.org/nkhabarov-exos/node-sass-chokidar.svg?branch=master)](https://travis-ci.org/nkhabarov-exos/node-sass-chokidar)
 
 A thin wrapper around node-sass executable to use chokidar instead of Gaze when watching files.
 
