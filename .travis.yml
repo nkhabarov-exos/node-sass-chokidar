@@ -9,7 +9,6 @@ node_js:
   - "7"
   - "6"
   - "4"
-  - "0.12"
   - "iojs"
 
 compiler: gcc
@@ -43,7 +42,7 @@ addons:
 before_install:
   - npm config set python `which python`
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
-      if [[ $(node -v) > "v9" ]]; then
+      if (( $(node -v | sed 's/v//' | sed 's/\..*$//') > 9 )); then
         export CC="gcc-4.9";
         export CXX="g++-4.9";
         export LINK="gcc-4.9";
